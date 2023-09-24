@@ -41,7 +41,7 @@ export default class App extends Component {
       <>
         <Section title="Please leave feedbeack">
           <FeedbackOptions
-            options={Object.keys(this.state)}
+            options={options}
             onLeaveFeedback={this.leaveFeedback}
           />
         </Section>
