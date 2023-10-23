@@ -11,8 +11,7 @@ export default class App extends Component {
     bad: 0,
   };
 
-  leaveFeedback = event => {
-    const objKey = event.target.name;
+  leaveFeedback = objKey => {
     this.setState(prevState => {
       return { [objKey]: prevState[objKey] + 1 };
     });
@@ -35,6 +34,7 @@ export default class App extends Component {
 
   render() {
     const options = Object.keys(this.state);
+    console.log(options);
     const totalFeedback = this.countTotalFeedback();
 
     return (

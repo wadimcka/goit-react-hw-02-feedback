@@ -5,7 +5,11 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <BtnWrap>
       {options.map(option => (
-        <FeedbackBtn key={option} name={option} onClick={onLeaveFeedback}>
+        <FeedbackBtn
+          key={option}
+          name={option}
+          onClick={() => onLeaveFeedback(option)}
+        >
           {option}
         </FeedbackBtn>
       ))}
