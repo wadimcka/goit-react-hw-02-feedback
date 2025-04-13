@@ -1,18 +1,22 @@
-import React from 'react';
-import { BtnWrap, FeedbackBtn } from './FeedbackOptions.styled';
+import css from './FeedbackOptions.module.css';
 
-export default function FeedbackOptions({ options, onLeaveFeedback }) {
+export default function FeedbackOptions({ options, onFeedbackBtn }) {
   return (
-    <BtnWrap>
-      {options.map(option => (
-        <FeedbackBtn
-          key={option}
-          name={option}
-          onClick={() => onLeaveFeedback(option)}
-        >
-          {option}
-        </FeedbackBtn>
-      ))}
-    </BtnWrap>
+    <div className={css.btnWraper}>
+      {options.map(option => {
+        return (
+          <button
+            key={option}
+            type="button"
+            className={css.optionButton}
+            onClick={() => {
+              onFeedbackBtn(option);
+            }}
+          >
+            {option}
+          </button>
+        );
+      })}
+    </div>
   );
 }

@@ -1,11 +1,10 @@
-import React from 'react';
-import { Container, Title } from './Section.styled';
+import css from './Section.module.css';
 
 export default function Section({ title, children }) {
   return (
-    <Container>
-      <Title>{title}</Title>
+    <section className={css.section}>
+      <h2 className={css.sectionTitle}>{title}</h2>
       {children}
-    </Container>
+    </section>
   );
 }

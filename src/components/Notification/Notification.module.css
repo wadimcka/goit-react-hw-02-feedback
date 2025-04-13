@@ -1,0 +1,18 @@
+.icon {
+  font-size: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.good {
+  color: rgba(45, 230, 27, 0.63);
+}
+
+.neutral {
+  color: rgba(255, 204, 0, 0.8);
+}
+
+.bad {
+  color: rgba(255, 0, 0, 0.8);
+}

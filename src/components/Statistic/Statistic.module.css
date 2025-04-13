@@ -1,0 +1,11 @@
+.statisticList {
+  font-size: 16px;
+}
+
+.statisticItem {
+  margin-bottom: 10px;
+}
+
+.statisticItem:nth-child(n + 4) {
+  font-weight: bold;
+}
